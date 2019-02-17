@@ -11,8 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Urban Agriculture Sites in Washington DC
 
-# Kevin Cole - February 17, 2019
-
 This map shows the locations of urban agriculture sites in Washington, DC from the data at: [OpenData.DC.gov](http://rmarkdown.rstudio.com).
 
 The radius of the markers is indicative of the acreage of the site, but does _not_ represent actual geographic coverage. 
@@ -22,19 +20,23 @@ library(leaflet)
 
 ## Read CSV file
 getData <- read.csv("Urban_Agriculture_Sites.csv", header = TRUE)
+## Take only complete rows (some are missing lat/lng info)
 geoData <- getData[complete.cases(getData), ]
+## Create a color palette for the factor "ststus"
 factpal <- colorFactor(topo.colors(2), geoData$STATUS)
+
+## Initialize leaflet
 m <- leaflet() %>%
-  addTiles() %>%
+  addTiles() %>% ## Add tileset
   addCircleMarkers(
     data = geoData, 
     lng = ~LONGITUDE,
     lat = ~LATITUDE,
-    popup = paste("<strong>Company Name: </strong>", geoData$COMPANY, "<br><strong>Address: </strong>", geoData$GROWINGADDRESS, "<br><a href=", geoData$URL, ">WEBSITE</a>"), 
-    radius = ~ACREAGE*15,
-    color = ~factpal(STATUS)) %>%
-  addLegend(pal = factpal, values = geoData$STATUS)
-m
+    popup = paste("<strong>Company Name: </strong>", geoData$COMPANY, "<br><strong>Address: </strong>", geoData$GROWINGADDRESS, "<br><a href=", geoData$URL, ">WEBSITE</a>"),  ## Make informative popups
+    radius = ~ACREAGE*15, ## Set radius based on acreage, but big enough to see
+    color = ~factpal(STATUS)) %>% ## color based on factor status
+  addLegend(pal = factpal, values = geoData$STATUS) ## Add a legend
+m ## And print the thing
 
 
 ```
