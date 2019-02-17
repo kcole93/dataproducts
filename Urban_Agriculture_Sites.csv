@@ -1,0 +1,39 @@
+﻿X,Y,OBJECTID,COMPANY,GROWINGADDRESS,STATUS,ACREAGE,URL,XCOORD,YCOORD,MATCHTYPE,MAR_ID,LATITUDE,LONGITUDE
+-77.024129730059116,38.932288989741409,1,"Good Sense Farm & Apiary, LLC",3400 Georgia Ave NW,For-profit,0.17,http://goodsensefarm.com/,397908.04,140489.06,Exact,233060,38.93228153,-77.02412744
+-77.004715731100717,38.919622898823441,2,Little Wild Things City Farm,2131 Lincoln Rd NE,For-profit,0.125,www.littlewildthingsfarm.com,399591.25,139082.75,Exact,,,
+-77.063539160538298,38.903810863224983,3,Little Wild Things City Farm,3210 Grace St NW,For-profit,0.01,www.littlewildthingsfarm.com,0,0,Manual,,,
+-77.021669260456164,38.894949910193375,4,Up Top Acres,401 7th St NW,For-profit,0.04,http://uptopacres.com/index.html,398120.39,136344.06,Exact,279733,38.89494246,-77.02166697
+-77.007812992333314,38.877999956245198,5,Up Top Acres,1015 Half St SE,For-profit,0.57,http://uptopacres.com/index.html,399322.26,134462.29,Exact,75572,38.87799251,-77.00781071
+-77.006992152444852,38.876263459695892,6,Up Top Acres,55 M St SE,For-profit,0.344,http://uptopacres.com/index.html,399393.47,134269.52,Exact,306664,38.87625601,-77.00698987
+-77.009345588796961,38.919727657291553,7,Cultivate the City,2216 North Capitol St NW,For-profit,0.02,http://www.cultivatethecity.com/,399189.75,139094.41,Exact,228044,38.9197202,-77.0093433
+-76.982292297466344,38.902429861689861,8,Cultivate the City,910 Bladensburg Rd NE,For-profit,0.08,http://www.cultivatethecity.com/,401536.18,137174.32,Exact,289060,38.90242241,-76.98229002
+-76.982906596905096,38.897383469566478,9,Cultivate the City,601 15th St NE,For-profit,0.05,http://www.cultivatethecity.com/,401483,136614.12,Exact,289548,38.89737602,-76.98290432
+-76.995982476361149,38.902772821301141,10,Cultivate the City,700 K St NE,For-profit,0.02,http://www.cultivatethecity.com/,400348.68,137212.25,Exact,293,38.90276537,-76.99598019
+-76.915892459483587,38.889427253945399,11,East Capitol Urban Farm (UDC),5901 East Capitol St SE,Non-profit,3,http://dev.udc.edu/college_of_urban_agriculture_and_environmental_studies/east_capitol_urban_farm,407297.09,135734.14,Exact,302595,38.8894198,-76.9158902
+-77.014878399419942,38.971927022510059,12,Laurel Academy Farm,6808 Laurel St NW,Non-profit,0.2,http://www.laurelacademyfarm.org/,398710.89,144889.07,Exact,245177,38.97191955,-77.01487611
+-76.925772377030313,38.897307268848948,13,Washington Parks & People,601 Division Ave NE,Non-profit,0.005,https://www.washingtonparks.net/locations/,406439.23,136608.14,Exact,5742,38.89729981,-76.92577012
+-77.027816266919061,38.93109556051612,14,Washington Parks & People,3313 11th St NW,Non-profit,0.25,http://www.columbiaheightsgreen.org/,397588.36,140356.67,Exact,230986,38.9310881,-77.02781397
+-76.928272742046858,38.899263285841798,15,Washington Parks & People,5000 Nannie Helen Burroughs Ave NE,Non-profit,0.85,https://www.washingtonparks.net/locations/,406222.16,136825.1,Exact,289526,38.89925583,-76.92827048
+-77.017191432116732,38.918312458599374,16,Common Good City Farm,334 V Street NW,Non-profit,0.5,http://www.commongoodcityfarm.org/,398509.33,138937.41,Exact,284644,38.918305,-77.01718914
+-76.95239650693027,38.883035396715393,17,DC Greens,3675 Ely Pl SE,Non-profit,0.022,http://dcgreens.org/,404130.49,135022.31,Exact,310463,38.88302794,-76.95239424
+-76.975324143870296,38.843564901385868,18,THEARC Farm,1901 Mississippi Ave SE,Non-profit,0.4,http://www.thearcdc.org/thearcfarm,402142.37,130640.01,Exact,295845,38.84355746,-76.97532187
+-76.928272742046858,38.899263285841798,19,DC Urban Greens,5000 Nannie Helen Burroughs Ave NE,Non-profit,0.15,http://www.dcurbangreens.org/,406222.16,136825.1,Exact,289526,38.89925583,-76.92827048
+-76.949374645555665,38.882551006125574,20,DC Urban Greens,3779 Ely Pl SE,Non-profit,0.35,http://www.dcurbangreens.org/,404392.71,134968.68,Exact,301486,38.88254355,-76.94937238
+-76.978730650847709,38.857590446802249,21,DC Urban Greens,1812 Erie St SE,Non-profit,0.5,http://www.dcurbangreens.org/,401846.28,132196.87,Exact,296165,38.85758267,-76.97872838
+-76.97579077027639,38.926830207509283,22,Rooftop Roots,2901 20th St NE,Non-profit,0.01,http://rooftoproots.org/,402099.41,139883.09,Exact,287283,38.92682275,-76.97578849
+-77.028432325197457,38.903503791197167,23,Rooftop Roots,1200 L St NW,Non-profit,0.01,http://rooftoproots.org/,397533.99,137293.77,Exact,240922,38.90349634,-77.02843003
+-76.995368034818867,38.84716908340441,24,Rooftop Roots,2730 Martin Luther King Jr Ave SE,Non-profit,0.01,http://rooftoproots.org/,400402.29,131039.82,Exact,311840,38.84716164,-76.99536576
+-77.011885864970978,38.880462507406122,25,Dreaming Out Loud,700 Delaware Ave SW,Non-profit,0.25,http://www.dreamingoutloud.org/,398968.89,134735.69,Exact,302132,38.88045506,-77.01188358
+-76.931232963741763,38.893479981530504,26,Dreaming Out Loud,4900 Brooks St NE,Non-profit,1,http://www.dreamingoutloud.org/,405965.86,136182.91,Exact,295154,38.89347253,-76.9312307
+-77.006961623338327,38.836218746467729,27,Project EDEN,3754 Martin Luther King Jr Ave SE,Non-profit,0.028,https://projectedendc.org/,399395.78,129824.27,Exact,30765,38.83621131,-77.00695934
+-77.035097540850799,38.925246483920446,28,City Blossoms,1480 Girard St NW,Non-profit,0.07,http://cityblossoms.org/,396956.78,139707.59,Exact,284045,38.92523903,-77.03509525
+-77.006159018883125,38.952944397617237,29,Neighborhood Farm Initiative,100 Gallatin St NE,Non-profit,0.24,http://neighborhoodfarminitiative.org/,399351.72,142773.48,Exact,,,
+-77.00072715931816,38.928631283063552,30,Three Part Harmony Farm,3104 4th St NE,For-profit,2,http://threepartharmonyfarm.org/,,,Manual,,,
+-77.009415523529952,38.909039960418085,31,Cultivate the City,1412 North Capitol St NW,For-profit,0.03,http://www.cultivatethecity.com/,,,Manual,,,
+-76.997485908273674,38.902601370102943,32,Cultivate the City,640 K St NE,For-profit,0.05,http://www.cultivatethecity.com/,,,Manual,,,
+-77.012390033480415,38.90259371899959,33,DC Greens,111 K St NW,Non-profit,0.75,http://dcgreens.org/,,,Manual,,,
+-77.043982633992329,38.919877165930487,34,Rooftop Roots,1875 Kalorama Rd NW,Non-profit,0.005,http://rooftoproots.org/,,,Manual,,,
+-77.020640201274645,38.910337797944429,35,City Blossoms,1519 Marion St NW,Non-profit,0.1,http://cityblossoms.org/,,,Manual,,,
+-76.932832241555573,38.898547042052179,36,Department of Parks and Recreation (DPR),4801 Nannie Helen Burroughs Ave NE,Non-profit,0.25,"https://dpr.dc.gov/page/dpr-community-gardens
+https://dpr.dc.gov/page/dpr-community-gardens
+https://dpr.dc.gov/page/dpr-community-gardens",,,Manual,,,

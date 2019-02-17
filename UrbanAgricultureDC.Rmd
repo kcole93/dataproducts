@@ -1,0 +1,40 @@
+---
+title: "Urban Agriculture"
+author: "Kevin Cole"
+date: "February 17, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Urban Agriculture Sites in Washington DC
+
+# Kevin Cole - February 17, 2019
+
+This map shows the locations of urban agriculture sites in Washington, DC from the data at: [OpenData.DC.gov](http://rmarkdown.rstudio.com).
+
+The radius of the markers is indicative of the acreage of the site, but does _not_ represent actual geographic coverage. 
+
+```{r}
+library(leaflet)
+
+## Read CSV file
+getData <- read.csv("Urban_Agriculture_Sites.csv", header = TRUE)
+geoData <- getData[complete.cases(getData), ]
+factpal <- colorFactor(topo.colors(2), geoData$STATUS)
+m <- leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(
+    data = geoData, 
+    lng = ~LONGITUDE,
+    lat = ~LATITUDE,
+    popup = paste("<strong>Company Name: </strong>", geoData$COMPANY, "<br><strong>Address: </strong>", geoData$GROWINGADDRESS, "<br><a href=", geoData$URL, ">WEBSITE</a>"), 
+    radius = ~ACREAGE*15,
+    color = ~factpal(STATUS)) %>%
+  addLegend(pal = factpal, values = geoData$STATUS)
+m
+
+
+```
