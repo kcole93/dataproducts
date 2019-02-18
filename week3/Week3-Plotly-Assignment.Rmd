@@ -1,0 +1,49 @@
+---
+title: 'Creating Data Products - Week 3: Plotly'
+author: "Kevin Cole"
+date: "February 17, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Murder Arrest Rates, USA
+
+This choropleth map shows the number of arrests made for murders in the US per 100,000 persons and uses the standard R dataset `USArrests`.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(plotly)
+df <- USArrests
+## Fancy label for hover-over
+df$hover <- paste("Murder Arrests (per 100,000 people): ", df$Murder)
+## Use state.abb function to match full rownames to abbreviations for plotly.
+df$state <- state.abb[match(rownames(df),state.name)]
+
+
+# give state boundaries a white border
+l <- list(color = toRGB("white"), width = 2)
+# specify some map projection/options
+g <- list(
+  scope = 'usa',
+  projection = list(type = 'albers usa'),
+  showlakes = TRUE,
+  lakecolor = toRGB('white')
+)
+
+## Initiate the geo plot
+p <- plot_geo(df, locationmode = 'USA-states') %>%
+  add_trace(
+    z = ~Murder, text = ~hover, locations = ~state,
+    color = ~Murder, colors = 'Reds'
+  ) %>%
+  colorbar(title = "Murder Arrests per 100,000 People") %>%
+  layout(
+    title = 'Murder Arrests by State<br>(Hover for breakdown)',
+    geo = g
+  )
+## And plot it
+p
+```
+
